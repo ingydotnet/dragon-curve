@@ -4,41 +4,47 @@
 
 # Glojure supported platforms (based on pkg/gen/gljimports)
 platforms:
-# Linux - 64-bit only
+# Linux - common architectures
 - linux/amd64
 - linux/arm64
+- linux/arm
+- linux/386
 
 # macOS - Intel and Apple Silicon
 - darwin/amd64
 - darwin/arm64
 
-# Windows - amd64 and 32-bit ARM
+# Windows - common architectures
 - windows/amd64
+- windows/arm64
 - windows/arm
+- windows/386
+
+# FreeBSD - server platform
+- freebsd/amd64
+- freebsd/arm64
+- freebsd/386
+
+# OpenBSD - server platform
+- openbsd/amd64
+- openbsd/arm64
+
+# NetBSD - server platform
+- netbsd/amd64
+- netbsd/arm64
+
+# DragonFly BSD
+- dragonfly/amd64
+
+# Solaris and illumos
+- solaris/amd64
+- illumos/amd64
+
+# Linux - additional architectures
+- linux/riscv64    # RISC-V 64-bit
+- linux/ppc64le    # IBM POWER
+- linux/s390x      # IBM Z mainframe
 
 # WebAssembly - for browsers and WASI runtimes
 - js/wasm
 - wasip1/wasm
-
-# Unsupported by Glojure:
-# 32-bit architectures:
-# - linux/386
-# - linux/arm
-# - windows/386
-# - freebsd/386
-#
-# BSD variants:
-# - freebsd/amd64
-# - freebsd/arm64
-# - openbsd/amd64
-# - openbsd/arm64
-# - netbsd/amd64
-# - netbsd/arm64
-#
-# Additional architectures:
-# - linux/ppc64le    # IBM POWER
-# - linux/s390x      # IBM Z mainframe
-# - linux/mips64le   # MIPS 64-bit
-# - linux/riscv64    # RISC-V 64-bit
-# - dragonfly/amd64  # DragonFly BSD
-# - solaris/amd64    # Solaris/Illumos
