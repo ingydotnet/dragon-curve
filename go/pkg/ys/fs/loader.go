@@ -4,8 +4,8 @@ package fs
 
 import (
 	fmt "fmt"
-	lang "github.com/glojurelang/glojure/pkg/lang"
-	runtime "github.com/glojurelang/glojure/pkg/runtime"
+	lang "github.com/ingydotnet/glojure/pkg/lang"
+	runtime "github.com/ingydotnet/glojure/pkg/runtime"
 	os5 "os"
 	exec7 "os/exec"
 	filepath4 "path/filepath"

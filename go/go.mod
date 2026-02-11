@@ -1,9 +1,13 @@
-module build.yamlscript.org/dragon_curve.core
+module github.com/ingydotnet/dragon-curve/go
 
-go 1.19
+go 1.24
 
-require github.com/glojurelang/glojure v0.6.4
+require github.com/ingydotnet/glojure v0.6.5-0.20260211222829-1955382ca291
 
-replace github.com/glojurelang/glojure => /home/ingy/src/dragon-curve/.cache/.local/cache/gloat-main/.cache/.local/cache/glojure-v0.6.4
-
-replace build.yamlscript.org/dragon_curve.core => ./
+require (
+	bitbucket.org/pcastools/hash v1.0.5 // indirect
+	github.com/google/uuid v1.6.0 // indirect
+	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
+	go4.org/intern v0.0.0-20220617035311-6925f38cc365 // indirect
+	go4.org/unsafe/assume-no-moving-gc v0.0.0-20230525183740-e7c30c78aeb2 // indirect
+)

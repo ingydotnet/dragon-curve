@@ -4,8 +4,8 @@ package http
 
 import (
 	fmt "fmt"
-	lang "github.com/glojurelang/glojure/pkg/lang"
-	runtime "github.com/glojurelang/glojure/pkg/runtime"
+	lang "github.com/ingydotnet/glojure/pkg/lang"
+	runtime "github.com/ingydotnet/glojure/pkg/runtime"
 	io5 "io"
 	http4 "net/http"
 	reflect "reflect"
