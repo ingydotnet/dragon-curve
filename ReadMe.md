@@ -60,7 +60,7 @@ This will:
 
 ## Customizing Platforms
 
-To build for specific platforms, create `.github/makes/release.yaml`:
+To build for specific platforms, create `.makes/gloat.config`:
 
 ```yaml
 platforms:
